@@ -1,0 +1,45 @@
+baseURL = 'https://sukhman31.github.io/blog/'
+locale = 'en-us'
+title = "Sukhman's Blog"
+theme = 'PaperMod'
+
+paginate = 10
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[params]
+  env = 'production'
+  defaultTheme = 'auto'
+  ShowShareButtons = false
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  comments = false
+
+  [params.homeInfoParams]
+    Title = "Hi there \U0001F44B"
+    Content = "Welcome to my blog, where I write about things I'm building and learning."
+
+[[params.socialIcons]]
+  name = 'github'
+  url = 'https://github.com/sukhman31'
+
+[menu]
+  [[menu.main]]
+    identifier = 'posts'
+    name = 'Posts'
+    url = '/posts/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'tags'
+    name = 'Tags'
+    url = '/tags/'
+    weight = 20
+
+[markup]
+  [markup.highlight]
+    noClasses = false
